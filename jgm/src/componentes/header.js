@@ -1,4 +1,5 @@
 import { login } from "../vistas/login.js"
+import { panel } from "../vistas/panel.js"
 import { registro } from "../vistas/registro.js"
 
 export const header = {
@@ -26,14 +27,20 @@ script: () =>{
 document.querySelector('#btnReg').addEventListener('click', ()=>{
 console.log('hola desde el boton de registro')
 document.querySelector('main').innerHTML=registro.template
-
+})
    
-document.querySelector('#btnLogin').addEventListener('click', ()=>{
+document.querySelector('#btnLog').addEventListener('click', ()=>{
 console.log('hola desde el boton de login')
 document.querySelector('main').innerHTML=login.template
 
    })
-})
+
+document.querySelector('#btnPanel').addEventListener('click', ()=>{
+console.log('hola desde el boton de panel')
+document.querySelector('main').innerHTML=panel.template
+    
+       })
+
 
 }
 }
